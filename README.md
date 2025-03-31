@@ -54,12 +54,16 @@ The SLCDC module of the RA4L1 provides an efficient, low-power, and cost-effecti
 
 
 - **RA4L1_LCD_Project2**:RA4L1驱动LCD屏幕(2)----驱动LCD点亮
-- **CSDN Blog**:[https://coremaker.blog.csdn.net/article/details/146589863](https://coremaker.blog.csdn.net/article/details/146589863)
-- **Video**:[https://www.bilibili.com/video/BV1JuoUYnE2R/](https://www.bilibili.com/video/BV1JuoUYnE2R/)
+- **CSDN Blog**:[https://coremaker.blog.csdn.net/article/details/146590286](https://coremaker.blog.csdn.net/article/details/146590286)
+- **Video**:[https://www.bilibili.com/video/BV1VHoUYGECR/](https://www.bilibili.com/video/BV1VHoUYGECR/)
 
+本文旨在介绍如何使用瑞萨 RA4L1 系列单片机的 SLCDC（Segment LCD Controller）模块，驱动段式 LCD 屏幕实现字符或图案的点亮显示。通过分析 LCD 屏幕的 COM/SEG 引脚分布关系，结合 FSP（中的 SLCDC 驱动 API（如 R_SLCDC_Write() 和 R_SLCDC_Modify()），实现对单个或多个数码管笔段的精确控制。文中以实际硬件为例，展示如何点亮指定数码管（如显示数字“1”或“3”），并解释段寄存器设置、位图控制方法以及显示时序，为后续 LCD 显示开发和调试提供参考。
 
+This article aims to demonstrate how to use the SLCDC (Segment LCD Controller) module of the Renesas RA4L1 series microcontroller to drive a segment LCD screen for displaying characters or patterns.
 
+By analyzing the COM/SEG pin mapping of the LCD panel and leveraging the SLCDC driver APIs provided in the FSP (such as R_SLCDC_Write() and R_SLCDC_Modify()), developers can achieve precise control over individual or multiple segments of a digital display.
 
+Using actual hardware as an example, the article illustrates how to light up specific digits (e.g., displaying the number “1” or “3”) and explains segment register settings, bitmap control methods, and display timing. This serves as a practical reference for subsequent LCD display development and debugging.
 
 
 
